@@ -11,9 +11,9 @@ public abstract class Personnage implements Victime {
 
     public void afficher() {
         if (this.vie>0){
-            System.out.println("Je m'appelle " + this.name + " et j'ai " + this.vie + " points de vie.\n");
+            System.out.println("Je m'appelle " + this.name + " et j'ai " + this.vie + " points de vie.");
         } else {
-            System.out.println(this.name + " est mort.\n");
+            System.out.println(this.name + " est mort.");
         }
     }
 
@@ -32,10 +32,7 @@ public abstract class Personnage implements Victime {
     public void addVie(int num){
         this.vie += num;
     }
-/*
-    public abstract int subitFrappe(int coup);
-    public abstract int subitCharme(int coup);
-    */
+
     public abstract void attaque(Personnage p);
 
 }
